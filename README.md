@@ -26,55 +26,55 @@ The render method returns a description of what you want to see on the screen.
 
 -- Example 
 
-class ContactInfo extends React.Component {
-  render() {
-    return (
-      <div>{this.props.contact.name} {this.props.contact.phone}</div>
-    )
-  }
-}
-
-class Contact extends React.Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = {
-      contactData: [
-        { name: 'Abet', phone: '010-0000-0001' },
-        { name: 'Betty', phone: '010-0000-0002' },
-        { name: 'Charlie', phone: '010-0000-0003' },
-        { name: 'David', phone: '010-0000-0004' }
-      ]
+    class ContactInfo extends React.Component {
+      render() {
+        return (
+          <div>{this.props.contact.name} {this.props.contact.phone}</div>
+        )
+      }
     }
-    
-  }
-  render() {
-    
-    const mapToComponent = (data) => {
-      return data.map((contact, i) => {
-        return (<ContactInfo contact={contact} key={i}/>);
-      });
+
+    class Contact extends React.Component {
+
+      constructor(props) {
+        super(props);
+        this.state = {
+          contactData: [
+            { name: 'Abet', phone: '010-0000-0001' },
+            { name: 'Betty', phone: '010-0000-0002' },
+            { name: 'Charlie', phone: '010-0000-0003' },
+            { name: 'David', phone: '010-0000-0004' }
+          ]
+        }
+
+      }
+      render() {
+
+        const mapToComponent = (data) => {
+          return data.map((contact, i) => {
+            return (<ContactInfo contact={contact} key={i}/>);
+          });
+        };
+
+
+        return (
+          <div>
+            { mapToComponent(this.state.contactData) }
+          </div>
+        );
+      }
+    }
+
+    class App extends React.Component {
+
+      render() {
+        return (
+          <Contact/>
+        );
+      }
     };
-    
-    
-    return (
-      <div>
-        { mapToComponent(this.state.contactData) }
-      </div>
+
+    ReactDOM.render(
+      <App></App>,
+      document.getElementById("root")
     );
-  }
-}
-
-class App extends React.Component {
-
-  render() {
-    return (
-      <Contact/>
-    );
-  }
-};
-
-ReactDOM.render(
-  <App></App>,
-  document.getElementById("root")
-);
