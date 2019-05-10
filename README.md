@@ -83,6 +83,9 @@ The render method returns a description of what you want to see on the screen.
 -- Result:
 
 Abet 010-0000-0001
+
 Betty 010-0000-0002
+
 Charlie 010-0000-0003
+
 David 010-0000-0004
