@@ -1,6 +1,6 @@
 # React_Intro
 
->>  Component 
+>  Component 
 
 We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
 
@@ -14,12 +14,12 @@ We use components to tell React what we want to see on the screen. When our data
     Learn Once, Write Anywhere: 
     We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code. React can also render on the server using Node and power mobile apps using React Native.
 
->>  render
+>  render
 
 The render method returns a description of what you want to see on the screen.
 
 
->>  Props
+>  Props
 
 A component takes in parameters, called props (short for “properties”), and returns a hierarchy of views to display via the render method.
 
@@ -32,8 +32,13 @@ Component.defaultProps = { ... }
 Component.propTypes = { value: React.PropTypes.string, ... }
 
 
+> State
 
-  >> State
+can create components that are dynamic and interactive. can use state to remember things.
+
+- constructors
+
+React components can have state by setting this.state in their constructors. this.state should be considered as private to a React component that it’s defined in. 
 
 
 -- Example : Passing Data Through Props
