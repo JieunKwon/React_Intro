@@ -40,6 +40,12 @@ can create components that are dynamic and interactive. can use state to remembe
 
 React components can have state by setting this.state in their constructors. this.state should be considered as private to a React component that it’s defined in. 
 
+- setState
+
+ this.setState({ val: 'new_val' }) can change val to new_val.
+ 
+ When you call setState in a component, React automatically updates the child components inside of it too.
+ 
 
 -- Example : Passing Data Through Props
 
