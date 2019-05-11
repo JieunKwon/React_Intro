@@ -19,12 +19,13 @@ We use components to tell React what we want to see on the screen. When our data
 
 A component takes in parameters, called props (short for “properties”), and returns a hierarchy of views to display via the render method.
 
+
 @ render
 
 The render method returns a description of what you want to see on the screen.
 
 
--- Example 
+-- Example : Passing Data Through Props
 
     class ContactInfo extends React.Component {
       render() {
