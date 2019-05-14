@@ -5,6 +5,7 @@
 We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
 
     -- React -- 
+    
     Declarative: 
     React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable, simpler to understand, and easier to debug.
 
@@ -47,7 +48,7 @@ React components can have state by setting this.state in their constructors. thi
  When you call setState in a component, React automatically updates the child components inside of it too.
  
 
--- Example : Passing Data Through Props
+-- Example : Passing Data Through Props and setting state
 
     class ContactInfo extends React.Component {
       render() {
