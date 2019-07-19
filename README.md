@@ -107,7 +107,7 @@ React components can have state by setting this.state in their constructors. thi
     );
 
 
--- Result:
+--> Result:
 
 Abet 010-0000-0001
 
